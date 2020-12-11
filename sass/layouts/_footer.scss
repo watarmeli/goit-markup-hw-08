@@ -1,0 +1,79 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $dark-bg;
+
+  .container {
+    display: flex;
+  }
+}
+
+.address {
+  font-style: normal;
+}
+
+.map {
+  color: $white;
+}
+
+.footer-list .address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-contacts {
+  margin-right: 85px;
+}
+
+.footer-title {
+  color: $white;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.mailing {
+  margin-top: 12px;
+  margin-left: auto;
+  width: 570px;
+}
+
+.footer-form {
+  display: flex;
+}
+
+.footer-form-input {
+  flex-grow: 1;
+  margin-right: 12px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  height: 50px;
+  background-color: $dark-bg;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: $white;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus {
+    -webkit-text-fill-color: $white;
+    -webkit-box-shadow: 0 0 0px 1000px $dark-bg inset;
+    box-shadow: 0 0 0px 1000px $dark-bg inset;
+  }
+}
+
+.mailing-icon-svg {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  fill: currentColor;
+}

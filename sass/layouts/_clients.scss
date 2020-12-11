@@ -1,0 +1,30 @@
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-icons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  background-color: $white;
+  border: 1px solid $link-cl;
+  border-radius: 4px;
+  color: $link-cl;
+
+  &:hover,
+  &:focus {
+    border-color: $accent-cl;
+    color: $accent-cl;
+  }
+}
+
+.clients-icons-svg {
+  fill: currentColor;
+}

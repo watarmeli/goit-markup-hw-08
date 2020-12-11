@@ -1,0 +1,49 @@
+.btn {
+  cursor: pointer;
+}
+
+.btn-main {
+  width: 200px;
+  padding: 10px 31px;
+  border-radius: 4px;
+  border: 0;
+  background-color: $accent-cl;
+  color: $white;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  font-family: inherit;
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+    color: $accent-cl;
+  }
+}
+
+.btn-footer {
+  display: flex;
+  align-items: center;
+  padding: 10px 28px;
+}
+
+.filter-btn {
+  padding: 6px 22px;
+  border: 0;
+  border-radius: 4px;
+  background-color: $light-bg;
+  color: $black;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  font-family: inherit;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    background-color: $accent-cl;
+    color: $white;
+  }
+}
