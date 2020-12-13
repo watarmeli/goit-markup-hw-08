@@ -564,6 +564,18 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    width: 1200px;
+  }
+}
+
 .feature-title {
   font-weight: 700;
   font-size: 14px;
