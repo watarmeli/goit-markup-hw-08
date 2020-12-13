@@ -5,6 +5,7 @@
 
   .container {
     display: flex;
+    align-items: baseline;
   }
 }
 
@@ -31,7 +32,6 @@
 }
 
 .mailing {
-  margin-top: 12px;
   margin-left: auto;
   width: 570px;
 }
