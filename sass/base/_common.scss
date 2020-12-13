@@ -63,6 +63,14 @@ img {
   @media screen and (min-width: 480px) {
     width: 480px;
   }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 .page-title {
@@ -77,6 +85,11 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $white;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .section-title {
@@ -87,6 +100,12 @@ img {
   letter-spacing: 0.03em;
   color: $black;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.67;
+    margin-bottom: 50px;
+  }
 }
 
 .list {
@@ -99,6 +118,11 @@ img {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .link {
@@ -113,10 +137,7 @@ img {
   &:focus {
     color: $accent-cl;
   }
-
 }
-
-
 
 .list-item a {
   text-decoration: none;

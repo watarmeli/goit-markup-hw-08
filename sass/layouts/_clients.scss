@@ -1,18 +1,29 @@
 .clients-list {
   display: flex;
   justify-content: center;
+
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
+
+  margin: -15px;
 }
 
-.clients-item:not(:last-child) {
-  margin-right: 30px;
+.clients-item {
+  width: 100%;
+  margin: 15px;
+  flex-basis: calc(100% / 2 - 30px);
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 3 - 30px);
+  }
 }
 
 .clients-icons-link {
+  height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
-  height: 90px;
   background-color: $white;
   border: 1px solid $link-cl;
   border-radius: 4px;

@@ -3,9 +3,18 @@
   padding-bottom: 60px;
   background-color: $dark-bg;
 
+  
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
   .container {
+    @media screen and (min-width: 768px) {
     display: flex;
-    align-items: baseline;
+    flex-wrap: wrap;
+      justify-content: space-around;
+    }
   }
 }
 
@@ -18,11 +27,23 @@
 }
 
 .footer-list .address-item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer-contacts {
-  margin-right: 85px;
+  // margin-right: 85px;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+}
+
+.footer-social {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-title {
@@ -32,17 +53,21 @@
 }
 
 .mailing {
-  margin-left: auto;
-  width: 570px;
+  // margin-left: auto;
+  // width: 570px;
 }
 
 .footer-form {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-form-input {
-  flex-grow: 1;
-  margin-right: 12px;
+  // flex-grow: 1;
+  width: 100%;
+  max-width: 450px;
+  margin-bottom: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
