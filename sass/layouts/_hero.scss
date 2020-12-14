@@ -1,6 +1,6 @@
 .hero {
-  // max-width: 1600px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 1600px;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -30,6 +30,7 @@
       url(../images/hero/hero-mobile@2x.jpg);
   }
 
+  
   @media screen and (max-width: 767px) {
     margin-top: 60px;
   }
