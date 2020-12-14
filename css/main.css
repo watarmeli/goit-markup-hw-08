@@ -364,7 +364,7 @@ img {
   opacity: 1;
   transition: opacity 250ms ease;
   overflow-y: scroll;
-  padding-top: 80px;
+  padding-top: 90px;
 }
 
 @media screen and (min-width: 768px) {
@@ -397,9 +397,9 @@ img {
   transition: transform 250ms ease;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .modal {
-    width: 450px;
+    max-width: 450px;
     height: 609px;
   }
 }
