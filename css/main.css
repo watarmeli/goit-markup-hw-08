@@ -595,12 +595,17 @@ img {
 }
 
 .header {
-  z-index: 999;
   position: fixed;
   width: 100%;
   top: 0;
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    z-index: 999;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -635,7 +640,7 @@ img {
     display: none;
     position: absolute;
     text-align: center;
-    top: 102%;
+    top: calc(100% + 1px);
     left: 0;
     background-color: #ffffff;
     padding-top: 60px;
