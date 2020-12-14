@@ -20,6 +20,15 @@
   &.is-open .icon-menu-open {
     display: none;
   }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  &:hover .mobile-menu-svg,
+  &:focus .mobile-menu-svg {
+    fill: $accent-cl;
+  }
 }
 
 .btn-main {
