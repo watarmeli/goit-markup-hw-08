@@ -2,6 +2,26 @@
   cursor: pointer;
 }
 
+.mobile-menu-btn {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  .icon-menu-close {
+    display: none;
+  }
+
+  &.is-open .icon-menu-close {
+    display: block;
+  }
+
+  &.is-open .icon-menu-open {
+    display: none;
+  }
+}
+
 .btn-main {
   width: 200px;
   padding: 10px 31px;

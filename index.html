@@ -12,35 +12,46 @@
   </head>
   <body>
     <!-- Шапка -->
-    <!-- <header class="header">      
+    <header class="header">      
       <div class="container header-container">
-        <nav class="main-nav">
-          <a href="./index.html" class="logo header-logo">Web<span>Studio</span></a>
-          <ul class="list site-nav">
-            <li class="item"><a href="./index.html" class="link nav-link current">Студия</a></li>
-            <li class="item"><a href="./portfolio.html" class="link nav-link">Портфолио</a></li>
-            <li class="item"><a href="#contacts" class="link nav-link">Контакты</a></li>
+        <a href="./index.html" class="logo header-logo">Web<span>Studio</span></a>
+
+        <button type="button" class="btn mobile-menu-btn" aria-expanded="false" aria-controls="header-menu" data-menu-button>
+          <svg class="mobile-menu-svg" width="40px" height="40px" aria-label="Кнопка мобильного меню">
+          <use class="icon-menu-open" href="./images/sprite.svg#icon-menu"></use>
+          <use class="icon-menu-close" href="./images/sprite.svg#icon-close_menu"></use>
+          </svg>
+        </button>
+        
+        <div class="header-menu" id="header-menu" data-menu>
+          <nav class="main-nav">
+            <ul class="list site-nav">
+              <li class="item"><a href="./index.html" class="link nav-link current">Студия</a></li>
+              <li class="item"><a href="./portfolio.html" class="link nav-link">Портфолио</a></li>
+              <li class="item"><a href="#contacts" class="link nav-link">Контакты</a></li>
+            </ul>
+          </nav>
+          <ul class="list header-contacts">
+            <li class="item contacts-list">
+              <a href="mailto:info@devstudio.com" class="link contacts-link">
+                <svg class="nav-icons-svg" width="16px" height="12px">
+                  <use href="./images/sprite.svg#icon-mail"></use>
+                </svg>info@devstudio.com
+              </a>
+            </li>
+            <li class="item contacts-list">
+              <a href="tel:+380961111111" class="link contacts-link">
+                <svg class="nav-icons-svg" width="10px" height="16px">
+                  <use href="./images/sprite.svg#icon-phone"></use>
+                </svg>+38 096 111 11 11
+              </a>
+            </li>
           </ul>
-        </nav>
-        <ul class="list header-contacts">
-          <li class="item contacts-list">
-            <a href="mailto:info@devstudio.com" class="link contacts-link">
-              <svg class="nav-icons-svg"  width="16px" height="12px">
-                <use href="./images/sprite.svg#icon-mail"></use>
-              </svg>info@devstudio.com
-            </a>
-          </li>
-          <li class="item contacts-list">
-            <a href="tel:+380961111111" class="link contacts-link">
-              <svg class="nav-icons-svg" width="10px" height="16px">
-                <use href="./images/sprite.svg#icon-phone"></use>
-              </svg>+38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+        </div>
+        
       </div>
     </header>
-    <main> -->
+    <main>
       <!-- Герой -->
       <section class="hero">
         <div class="hero-content">
@@ -117,7 +128,7 @@
           <ul class="list team-list">
             <li class="list-item team-item">
               <div class="team-card">
-                <img src="./images/team/teamcard1.jpg" alt="Игорь Демьяненко" width="450" />
+                <img src="./images/team/teamcard1.jpg" srcset="./images/team/teamcard1@2x.jpg 2x" alt="Игорь Демьяненко" width="450" />
                 <h3 class="team-item-title">Игорь Демьяненко</h3>
                 <p lang="en" class="team-text">Product Designer</p>
                 <ul class="list social-icons">
@@ -154,7 +165,7 @@
             </li>
             <li class="list-item team-item">
                 <div class="team-card">
-                  <img src="./images/team/teamcard2.jpg" alt="Ольга Репина" width="450" />
+                  <img src="./images/team/teamcard2.jpg" srcset="./images/team/teamcard2@2x.jpg 2x" alt="Ольга Репина" width="450" />
                   <h3 class="team-item-title">Ольга Репина</h3>
                   <p lang="en" class="team-text">Frontend Developer</p>
                   <ul class="list social-icons">
@@ -195,7 +206,7 @@
             </li>
             <li class="list-item team-item">
                 <div class="team-card">
-                  <img src="./images/team/teamcard3.jpg" alt="Николай Тарасов" width="450" />
+                  <img src="./images/team/teamcard3.jpg" srcset="./images/team/teamcard3@2x.jpg 2x" alt="Николай Тарасов" width="450" />
                   <h3 class="team-item-title">Николай Тарасов</h3>
                   <p lang="en" class="team-text">Marketing</p>
                   <ul class="list social-icons">
@@ -236,7 +247,7 @@
             </li>
             <li class="list-item team-item">
                 <div class="team-card">
-                  <img src="./images/team/teamcard4.jpg" alt="Михаил Ермаков" width="450" />
+                  <img src="./images/team/teamcard4.jpg" srcset="./images/team/teamcard4@2x.jpg 2x" alt="Михаил Ермаков" width="450" />
                   <h3 class="team-item-title">Михаил Ермаков</h3>
                   <p lang="en" class="team-text">UI Designer</p>
                   <ul class="list social-icons">
@@ -396,7 +407,7 @@
       </div>
     </footer>
     <!-- Модальное окно -->
-    <!-- <div class="backdrop  is-hidden" data-modal>
+    <div class="backdrop  is-hidden" data-modal>
       <div class="modal">
         <button class="btn modal-close-btn" type="button" data-modal-close>
           <svg class="close-icon-svg">
@@ -438,7 +449,8 @@
           <button class="btn modal-btn" type="submit">Отправить</button>
         </form>
       </div>
-    </div> -->
+    </div>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

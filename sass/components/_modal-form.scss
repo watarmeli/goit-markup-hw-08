@@ -77,18 +77,24 @@
 .modal-accept {
   position: relative;
   margin-bottom: 30px;
-  padding-left: 37px;
-  font-size: 14px;
-  line-height: 1.71;
+  padding-left: 24px;
+  font-size: 12px;
+  line-height: 1.167;
   letter-spacing: 0.03em;
   color: $main-text-cl;
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 37px;
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox-icon {
   position: absolute;
   width: 16px;
   height: 16px;
-  left: 12px;
+  left: 0px;
   top: 50%;
   transform: translateY(-50%);
   border: 2px solid $black;
@@ -102,6 +108,10 @@
     background-image: url(../images/checkbox.svg);
     background-size: contain;
     background-origin: border-box;
+  }
+
+  @media screen and (min-width: 1200px) {
+    left: 12px;
   }
 }
 
