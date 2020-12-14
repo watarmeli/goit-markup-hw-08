@@ -1174,6 +1174,7 @@ img {
 }
 
 .portfolio-thumb .portfolio-text {
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
