@@ -28,11 +28,10 @@
 .header-menu {
   width: 100%;
 
-  &.is-open {
-    display: block;
-  }
-
   @media screen and (max-width: 767px) {
+    &.is-open {
+      display: block;
+    }
     display: none;
     position: absolute;
     text-align: center;
